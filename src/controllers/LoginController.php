@@ -1,6 +1,6 @@
 <?php
 
-require_once '../chamado/src/models/User.php';
+require_once '../chamados/src/models/User.php';
 
 class LoginController{
     private $usuarios;
@@ -18,7 +18,7 @@ class LoginController{
                 $_SESSION['autenticacao'] = 'SIM';
                 $_SESSION['id'] = $user->id;
                 $_SESSION['tipo'] = $user->tipo;
-                header('Location: ../chamado/src/view/home.php');
+                header('Location: ../chamados/src/view/home.php');
                 exit;
             }
         }
